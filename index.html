@@ -11,15 +11,11 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
         <title>Install Tasmota</title>
         <link href="style.css" rel="stylesheet" type="text/css"/>
-        <script module>
-      import(
-        // In development we import locally.
-        window.location.hostname === "localhost"
-          ? "/dist/web/install-button.js"
-          : "https://unpkg.com/esp-web-tools@6.1.1/dist/web/install-button.js?module"
-      );
-    </script>
-    
+        <script
+            type="module"
+            src="https://unpkg.com/esp-web-tools@6.1.1/dist/web/install-button.js?module"
+        ></script>
+
     </head>
     <body>
         <div id="prog">
@@ -35,7 +31,7 @@ and open the template in the editor.
                 <br>
                 <select>
                     <optgroup label="Test">
-                        <option value="manifest/micropython.json">Blink builtin led</option>
+                        <option value="manifest/blink.json">Blink builtin led</option>
                     </optgroup>
                     <optgroup label="Micropython">
                         <option value="manifest/micropython.json">Micropython</option>
