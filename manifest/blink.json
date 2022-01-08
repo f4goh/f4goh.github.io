@@ -1,0 +1,21 @@
+{
+  "name": "Blink 1.00",
+  "version": "2022.1.0-dev",
+  "home_assistant_domain": "esphome",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",      
+      "parts": [
+        { "path": "../firmwares/blink/blink_esp32/bootloader_qio_80m.bin", "offset": 4096 },
+        { "path": "../firmwares/blink/blink_esp32/blink_esp32.partitions.bin", "offset": 32768 },
+        { "path": "../firmwares/blink/blink_esp32/boot_app0.bin", "offset": 57344 },
+        { "path": "../firmwares/blink/blink_esp32/blink_esp32.bin", "offset": 65536 }
+      ]
+    },
+    {
+      "chipFamily": "ESP8266",
+      "parts": [{ "path": "../firmwares/blink/blink_esp8266/blink_esp8266.bin", "offset": 0 }]
+    }
+  ]
+}

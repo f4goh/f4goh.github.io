@@ -1,0 +1,24 @@
+{
+  "name": "Espruino 2.11",
+  "version": "2021.12.0-dev",
+  "home_assistant_domain": "esphome",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",      
+      "parts": [
+        { "path": "../firmwares/espruino/espruino_esp32/bootloader.bin", "offset": 4096 },
+        { "path": "../firmwares/espruino/espruino_esp32/partitions_espruino.bin", "offset": 32768 },
+        { "path": "../firmwares/espruino/espruino_esp32/espruino_esp32.bin", "offset": 65536 }
+      ]
+    },
+    {
+      "chipFamily": "ESP8266",
+      "parts": [{ "path": "../firmwares/espruino/espruino_esp8266/boot_v1.6.bin", "offset": 0 },
+        { "path": "../firmwares/espruino/espruino_esp8266/espruino_esp8266_user1.bin", "offset": 4096 },
+        { "path": "../firmwares/espruino/espruino_esp8266/esp_init_data_default.bin", "offset": 4177920 },
+        { "path": "../firmwares/espruino/espruino_esp8266/blank.bin", "offset": 4186112 }
+        ]
+    }
+  ]
+}
