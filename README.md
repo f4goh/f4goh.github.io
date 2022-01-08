@@ -19,6 +19,5 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo apt-get install -f
 ```
-## sources
-[esp web tools](https://esphome.github.io/esp-web-tools/)
+## sources : [Esp web tools](https://esphome.github.io/esp-web-tools/)
 
