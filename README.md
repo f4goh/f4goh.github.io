@@ -1,6 +1,6 @@
 # [Install Firmware](https://f4goh.github.io/)
 
-A utiliser avec la [carte shield IOT](https://github.com/f4goh/Carte-shield-IOT)
+## Compatible avec la [carte shield IOT](https://github.com/f4goh/Carte-shield-IOT)
 
 ## L'esp32 et esp8266 peuvent être programés en ligne
 
@@ -10,9 +10,9 @@ A utiliser avec la [carte shield IOT](https://github.com/f4goh/Carte-shield-IOT)
 - Le programmateur reconnait automatiquement le microcontrôleur (esp32 ou esp 8266)
 - Cette interface n'est pas encore compatible avec l'esp01 (512K)
 
-## Utiliser le navigateur Google chrome
+## Utiliser le navigateur Google Chrome
 
-## Pour installer google chrome sur linux
+## Pour installer Google Chrome sur PC linux
 
 ```console
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
